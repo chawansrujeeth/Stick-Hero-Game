@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="plane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#handledown" prefHeight="600.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.recc.HelloController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="550.0" pickOnBounds="true">
+         <image>
+            <Image url="@background_image.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="rectangle1" arcHeight="5.0" arcWidth="5.0" height="232.0" layoutX="48.0" layoutY="368.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="105.0" />
+      <Rectangle fx:id="rectangle2" arcHeight="5.0" arcWidth="5.0" height="232.0" layoutX="272.0" layoutY="368.0" stroke="BLACK" strokeLineJoin="ROUND" strokeType="INSIDE" width="69.0" />
+      <Button layoutX="468.0" layoutY="79.0" mnemonicParsing="false" onAction="#flip" opacity="0.0" text="Button" />
+      <ImageView fx:id="square" fitHeight="48.0" fitWidth="40.0" layoutX="93.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="238.62085342407227">
+         <image>
+            <Image url="@charImage.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="cherries_final" layoutX="441.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Cherries: 0" wrappingWidth="78.4000244140625">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="count_final" layoutX="200.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="78.4000244140625">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button layoutX="46.0" layoutY="19.0" mnemonicParsing="false" onAction="#saveGame" text="save" />
+   </children>
+</AnchorPane>
